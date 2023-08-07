@@ -1,0 +1,586 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    background-color: #c9a66b;
+    color: #ebdcb2;
+}
+a {
+    
+}
+
+.header {
+    background: #662e1c;
+}
+.header a{
+    color: #ebdcb2;
+    transition: 0.5s;
+}
+.header a:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ebdcb2;
+    transition: 0.5s;
+}
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #af4425;
+    border: 5px solid #662e1c;
+    border-top: 0 solid #3423;
+    
+}
+
+.headerRow {
+    display: flex;
+    background-color: #662e1c;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.main {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-left: 100px;
+    display: flex;
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+}
+.btn:last-child{
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.reg {
+}
+
+.login {
+}
+
+.article {
+    display: flex;
+    padding: 20px;
+    min-width: 100%;
+}
+
+.article a{
+    color: #ebdcb2;
+}
+
+.articleTitle {
+    font-size: 30px;
+}
+
+.descr_min {
+    padding-top: 20px;
+    font-size: 20px;
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.articleDate{
+    text-align: right;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.articleImage {
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.readMore {
+    margin-top: 30px;
+    text-align: end;
+    
+}
+
+.readMore a:hover{
+    background: #912400;
+    transition: 0.5s ease-in;
+}
+
+.readMore a{
+    transition: 0.5s ease-in-out ;
+}
+
+.description {
+}
+
+.articles {
+    padding-top: 20px;
+}
+
+.articleInfo {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.infoRow{
+    height: 100%;
+}
+
+.articleInfo a {
+    background-color: #662e1c;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.item{
+    padding: 20px;
+}
+
+.itemTitle{
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.itemDescr_min{
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 10px;
+
+}
+.itemDescription{
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+}
+.itemImage{
+    padding: 20px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.itemImageRow{
+    
+}
+
+.form{
+    width: 300px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #080707;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    
+    /* background: #ebdcb2; */
+    
+}
+
+.formRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+.formInput, formBTN{
+font-family: sans-serif;
+letter-spacing: 1px;
+font-size: 16px;
+}
+
+.formTitle{
+    text-align: center;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    font-size: 24px;
+    
+}
+
+.formGroup{
+    position: relative;
+    margin-bottom: 32px;
+    
+}
+
+.formLabel{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: -1;
+    color: #ebdcb2;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.formInput{
+    width: 100%;
+    padding: 0 0 10px 0;
+    border:none;
+    border-bottom: 1px solid #ebdcb2;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formInput:focus{
+    border-bottom: 1px solid #e9d190;
+}
+
+.formBTN{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #912400;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.formBTN input:hover{
+    background: #4e1400;
+    transition: 0.5s ease-in;
+    
+}
+
+.formBTN:focus, formBTN:hover{
+    background-color: #ce3401;
+    padding: 8px 16px;
+    transition: 0.5s;
+}
+
+.formInput:focus ~ .formLabel, .formInput:not(:placeholder-shown) ~ .formLabel{
+    top: -18px;
+    font-size: 12px;
+    color: #ebdcb2;
+}
+.checkBox{
+    margin-bottom: 20px;
+}
+
+.category{
+padding: 0 20px;
+text-align: left;
+}
+
+.catTitle{
+    font-size: 24px;
+}
+
+.catDescription{
+font-size: 20px;
+margin:20px 0;
+}
+
+.goToCategory{
+margin: 30px 0px;
+
+}
+
+.goToCategory a {
+    color: #ebdcb2;
+    background-color: #662e1c;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+}
+
+.goToCategory a:hover{
+    background: #912400;
+    transition: 0.5s ease-in;
+}
+
+.categories{
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.titleOfCat{
+    font-size: 24px;
+}
+
+.photoProfile{
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    padding: 20px 10px 0px 10px;
+}
+.avatar{
+    max-width: 350px;
+    max-height: 350px;
+    background-color: #ffffff;
+}
+.infoProfile{
+    display: flex;
+}
+.bio{
+    resize: none;
+}
+
+.avatar{
+
+}
+
+.info{
+    width: 100%;
+}
+
+.info h1{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.country input{
+}
+.inputName{
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #ebdcb2;
+}
+.inputCountry{
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #ebdcb2;
+}
+
+.name{
+    width: 40%;
+    padding: 0 0 10px 0;
+    border:none;
+    border-bottom: 1px solid #ebdcb2;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    
+}
+
+.bioContainer{
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nameContainer{
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.countryContainer{
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.editInfo{
+    text-align: left;
+    cursor: pointer;
+    margin: 20px 10px 10px 10px;
+    padding-left: 10px;
+    background: #4e1400;
+    width: 115px;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.editInfo:hover{
+    background: #912400;
+    transition: 0.5s ease-in;
+}
+
+.formButtons{
+    text-align-last: left;
+}
+
+.formButtons input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #4e1400;
+    color: #ebdcb2;
+}
+.formButtons input:hover{
+    background-color: #912400;
+    transition: 0.6s;
+}
+
+.newArticle{
+    margin-top: 10px;
+    padding: 0;
+}
+.submitEditForm{
+
+}
+
+.cancelEditForm{
+
+}
+
+.yourArticles{
+    font-size: 34px;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.miniAvatar{
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    margin-top: -1px;
+    margin-left: 20px;
+    
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .overlay{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.modalWindow{
+    position: relative;
+    z-index: 2;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+    background-color: #fff;
+    padding: 30px;
+}
+.active{
+    z-index: 100;
+}
+.hidden{
+    visibility: hidden;
+}
+.btnClose{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    border: node;
+    background: none;
+    opacity: 0.7;
+}
+
+.btnClose:hover{
+    opacity: 1;
+}
+
+.commentsContainer{
+
+}
+
+.contentComment{
+
+}
+
+.avatarComment{
+
+}
+
+.loginComment{
+    
+}
+
+.commentTextArea{
+    width: 400px;
+    height: 200px;
+    resize: none;
+}
+
+.commentTextArea textarea{
+    resize: none;
+}
