@@ -202,8 +202,8 @@ function updateInfo()
     $bio = ($_POST["bio"] == null) ? $bio = $data["bio"] : $bio = $_POST["bio"];
     
     $query = "UPDATE users SET Photo='" . $photo . "', name='" . $name . "',country='" . $country . "',bio='" . $bio . "' WHERE id =" . $_COOKIE["id"];
-    if (execQuery($query)) echo "Успешно обновлено";
-    else echo "Ошибка";
+    // if (execQuery($query)) echo "Успешно обновлено";
+    // else echo "Ошибка";
     if (move_uploaded_file($_FILES["photo"]["tmp_name"], "static/avatars/" . $_FILES["photo"]["name"])) {
     }
 

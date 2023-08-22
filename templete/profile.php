@@ -4,7 +4,7 @@ require_once "templete/header.php";
 $query = "SELECT * FROM `users` WHERE id ='" . $_COOKIE["id"] . "'";
 $result = select($query)[0];
 // print_r($_POST);
-updateInfo();
+@updateInfo();
 
 ?>
 

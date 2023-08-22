@@ -37,9 +37,11 @@ if (isset($_POST["submit"]) && validateForm()) {
         "date" => ""
     );
 }
+require "header.php";
 ?>
 
-<h1>Create</h1>
+
 <?php
+
 require_once "_form.php";
 ?>

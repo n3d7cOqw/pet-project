@@ -584,3 +584,72 @@ margin: 30px 0px;
 .commentTextArea textarea{
     resize: none;
 }
+
+.articleNameInput{
+
+}
+.urlNameInput{
+
+} 
+.descr_minInput{
+
+} 
+.descriptionInput{
+
+} 
+.selectGroup{
+    margin: 10px 0px;
+}
+
+.imageInput{
+    margin: 10px 0px;
+}
+
+.titleForm{
+    color: #ebdcb2 ;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    
+    margin: 0 auto;
+}
+.formField{
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+.createFormContainer input{
+    font-size: 14px;
+    line-height: 16px;
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.createFormContainer textarea{
+    width: 375px;
+    min-height: 80px;
+    resize: none;
+    margin: 5px 0px;
+}
+.createFormContainer{
+    
+    max-width: 415px;
+    background: #af4425;
+    box-shadow: 0px 6px 50px #080707;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.8s;
+    margin-top: 50px;
+}
+.createFormContainer .createSubmit{
+    background: #4e1400 ;
+    color: #ebdcb2;
+    font-weight: 400;
+    width: 80px;
+    transition: 0.8s;
+}
+.createFormContainer .createSubmit:hover{
+    background: #ce3401;
+    transition: 0.8s;
+}

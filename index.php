@@ -3,7 +3,7 @@ require_once "config/db.php";
 require_once "core/function_db.php";
 require_once "core/function.php";
 $conn = connect();
-error_reporting(E_ERROR | E_PARSE);
+// error_reporting(E_ERROR | E_PARSE);
 if(isset($_GET['route'])){
     $route = $_GET['route'];
 }else $route = "";

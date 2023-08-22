@@ -1,9 +1,10 @@
+<div class="createFormContainer">
 <form action="" method="POST" enctype="multipart/form-data">
-    <p>Title: <input type="text" name="title" value="<?php echo $result["title"]; ?>"></p>
-    <p>URL: <input type="text" name="url" value="<?php echo $result["url"]; ?>"></p>
-    <p>Min descr: <textarea name="descr_min"><?php echo $result["descr_min"]; ?> </textarea></p>
-    <p>Description: <textarea name="description"><?php echo $result["description"]; ?></textarea></p>
-    <select name="cid">
+    <div class="formField">Title: <input type="text" class="articleNameInput" name="title" value="<?php echo $result["title"]; ?>"></div>
+    <div class="formField">URL: <input type="text" class="urlNameInput" name="url" value="<?php echo $result["url"]; ?>"></div>
+    <div class="formField">Min descr: <textarea class="descr_minInput" name="descr_min"><?php if(isset($result["descr_min"])) echo $result["descr_min"]; ?> </textarea></div>
+    <div class="formField">Description: <textarea class="descriptionInput" name="description"><?php echo $result["description"]; ?></textarea></div>
+    <div class="formField"><select name="cid" class="selectGroup">
         <?php
         $out = "";
         for ($i = 0; $i < count($category); $i++) {
@@ -16,11 +17,12 @@
         echo $out;
         ?>
     </select>
-    <p>Photo: <input type="file" name="image" value="<?php echo $result["image"]; ?>"></p>
+    <div class="formField">Photo: <input type="file" class="imageInput" name="image" value="<?php echo $result["image"]; ?>"></div>
     <?php
     if (isset($result["image"]) and $result["image"] != "") {
         echo "<img src='/static/images/" . $result["image"] . "'>";
     }
     ?>
-    <p><input type="submit" name="submit" value="<?php echo $action; ?>"></p>
+    <input type="submit" class="createSubmit" name="submit" value="<?php echo $action; ?>">
 </form>
+</div>

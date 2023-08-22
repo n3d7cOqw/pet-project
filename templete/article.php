@@ -12,12 +12,16 @@ $out .= "</div>";
 
 // echo  "</div>";
 echo $out;
-$query = "SELECT login, Photo from users WHERE id = " . $_COOKIE["id"];
-$info = select($query)[0];
-if(strlen($_POST["comment"]) != 0){
-    
-    createComment($route[1], $info);
-}
+error_reporting(E_ERROR | E_PARSE);
+
+    $query = "SELECT login, Photo from users WHERE id = " . $_COOKIE["id"];
+    $info = select($query)[0];
+    if(strlen($_POST["comment"]) != 0){
+
+        createComment($route[1], $info);
+
+} 
+
 ?>
 <div class="commentsContainer">
     <div class="commentForm">
@@ -45,3 +49,5 @@ if(strlen($_POST["comment"]) != 0){
         </div>
 </div>
 </div>
+
+<img src="static/avatars/amnyam.jpg`" alt="">
