@@ -563,27 +563,44 @@ margin: 30px 0px;
 
 }
 
-.contentComment{
+.comments h2{
+    font-size: 24px;
 
+}
+.contentComment input{
+    padding: 10px;
+    background: #4e1400;
+    color: #ebdcb2;
+    border-radius: 10px;
+}
+.commentOwnerInfo{
+    display: flex;
+    padding: 20px 10px;
 }
 
 .avatarComment{
-
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .loginComment{
-    
+    margin-top: 11px;
+    font-size: 18px;
+    margin-left: 20px;
 }
 
 .commentTextArea{
     width: 400px;
     height: 200px;
-    resize: none;
+    text-align: left;
 }
 
 .commentTextArea textarea{
     resize: none;
 }
+
+
 
 .articleNameInput{
 
@@ -652,4 +669,33 @@ margin: 30px 0px;
 .createFormContainer .createSubmit:hover{
     background: #ce3401;
     transition: 0.8s;
+}
+
+.commentBox{
+    margin: 20px 10px;
+    border-bottom: 1px solid #080707;
+    padding: 10px 0;
+}
+
+.commentInfoOwner{
+    display: flex;
+    width: 100%;
+}
+
+.commentsOwnerPhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.commentsOwnerLogin{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.theComment{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
 }

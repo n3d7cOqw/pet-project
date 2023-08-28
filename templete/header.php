@@ -31,7 +31,7 @@ $avatar = createAvatar();
                             </div>
                             <?php
                             if (getUser()) {
-                                echo "<img class='miniAvatar' src='static/avatars/" . $avatar["Photo"] . "'>";
+                                echo "<img class='miniAvatar' src='/static/avatars/" . $avatar["Photo"] . "'>";
                                 echo "<div class='profile btn'><a href='/profile'>Профиль</a></div>"; 
                                
                                 echo "<div class='logout btn'><a href='/logout'>Выйти из аккаунта</a></div>";

@@ -23,31 +23,33 @@ error_reporting(E_ERROR | E_PARSE);
 } 
 
 ?>
-<div class="commentsContainer">
-    <div class="commentForm">
-        <form action="" method="post">
-            <div class="contentComment">
-                <?php
-                echo "<div class='avatarComment'><img src='project/static/avatars/".$info["Photo"]."'></div>";
-                echo "<div class='loginComment'>". $info["login"]."</div>";
-                ?>
-                <div class="author">
-
+<div class="comments">
+    <h2>Комметарии:</h2>
+    <div class="commentsContainer">
+        <div class="commentForm">
+            <form action="" method="post">
+                <div class="contentComment">
+                    <?php
+                    echo "<div class='commentOwnerInfo'>";
+                    echo "<div><img class='avatarComment' src='/static/avatars/" . $info["Photo"] . "'></div>";
+                    // echo '<div class=avatarComment> <img src="/project/static/avatars/' .$info['Photo']. '"> </div>';
+                    echo "<div class='loginComment'>". $info["login"]."</div>";
+                    echo "</div>";
+                    ?>
+                    <!-- <div class="author"></div> -->
+                    <textarea name="comment" class="commentTextArea"></textarea>
+                    <div class="sentComment">
+                        <input type="submit" value="Отправить"> 
+                    </div>
                 </div>
-                <textarea name="comment" class="commentTextArea">
-                </textarea>
-                <div class="sentComment">
-                    <input type="submit">
-                </div>
-            </div>
-        </form>
-    </div>
-        <div class="comments">
-        <?php
-        outComments($route[1]);
-        ?>
+            </form>
         </div>
-</div>
+        
+            <?php
+            outComments($route[1]);
+            ?>
+        
+        </div>
+    </div>
 </div>
 
-<img src="static/avatars/amnyam.jpg`" alt="">

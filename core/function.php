@@ -313,9 +313,13 @@ function outComments($url){
     $out = "";
     for($i = 0; $i < count($data); $i++){
         $out .= "<div class='commentBox'>";
-        $out .= "<div class='commentsOwnerLogin'> <img src='static/avatas/'". $data[$i]['photo']."'> </div>";
-        $out .= "<div class='commentsOwnerPhoto'>". $data[$i]['login']."</div>";
-        $out .= "<div class='theComment'>". $data[$i]['comment']."</div>";
+        $out .= "<div class='commentInfoOwner'>";
+        // $out .= "<div class='commentsOwnerLogin'> <img src='/static/avatas/". $data[$i]['photo']."'> </div>";
+        $out .= "<div><img class='commentsOwnerPhoto' src='/static/avatars/" . $data[$i]["photo"] . "'></div>";
+        $out .= "<div class='commentsOwnerLogin'>". $data[$i]['login']."</div>";
+        $out .= "</div>";
+        $out .= "<div class='theComment'><p>". $data[$i]['comment']."</p></div>";
+        
         $out .= "</div>";
     }
     echo $out;
